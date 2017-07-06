@@ -1,19 +1,20 @@
-﻿<Window x:Class="MainWindow"
+﻿<Window x:Name="WndMain" x:Class="MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MNwuServiceProvider"
         mc:Ignorable="d" FontSize="14"
-        Title="MainWindow" Height="600" Width="800">
+        Title="M西北大学 接口封装测试" Height="600" Width="620">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBlock FontSize="32" Margin="4">成绩查询工具 Beta</TextBlock>
+        <TextBlock FontSize="32" Margin="4" Text="{Binding ElementName=WndMain,Path=Title,Mode=OneTime}"></TextBlock>
         <StackPanel Grid.Row="1">
             <TextBlock Margin="4">请输入学号</TextBlock>
             <TextBox x:Name="TxtStudentId" Margin="4"/>
@@ -26,8 +27,9 @@
                 <Hyperlink x:Name="LnkPrivacy" NavigateUri="https://nukepayload2.github.io/GenericPrivacyStatement/">隐私声明</Hyperlink></TextBlock>
         </StackPanel>
         <TextBlock x:Name="TblRealName" Grid.Row="2" Margin="4" FontSize="24" Visibility="Collapsed"><Run x:Name="RunRealName" />的成绩单</TextBlock>
-        <DataGrid x:Name="DatData" Grid.Row="3" AutoGenerateColumns="True" Margin="4">
-
-        </DataGrid>
+        <DataGrid x:Name="DatData" Grid.Row="3" AutoGenerateColumns="True" Margin="4"/>
+        <TextBlock Grid.Row="4" Margin="4" TextWrapping="WrapWithOverflow">
+            Copyright <Hyperlink x:Name="LnkGitHub" NavigateUri="https://github.com/nukepayload2/">Nukepayload2</Hyperlink> 2017 保留所有权利。感谢 <Hyperlink x:Name="LnkMail" NavigateUri="mailto:1326850039@qq.com">1326850039@qq.com</Hyperlink> 提供技术支持。
+        </TextBlock>
     </Grid>
 </Window>

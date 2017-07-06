@@ -1,6 +1,6 @@
 ﻿Class MainWindow
-    Private Sub LnkPrivacy_Click(sender As Object, e As RoutedEventArgs) Handles LnkPrivacy.Click
-        Process.Start(LnkPrivacy.NavigateUri.AbsoluteUri)
+    Private Sub Hyperlink_Click(sender As Object, e As RoutedEventArgs) Handles LnkPrivacy.Click, LnkGitHub.Click, LnkMail.Click
+        Process.Start(sender.NavigateUri.AbsoluteUri)
     End Sub
 
     Private Async Sub BtnConsult_ClickAsync(sender As Object, e As RoutedEventArgs) Handles BtnConsult.Click
