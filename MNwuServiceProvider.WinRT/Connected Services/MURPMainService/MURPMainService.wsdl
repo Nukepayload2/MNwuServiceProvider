@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://murpcn.com/murpwebservice/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://murpcn.com/murpwebservice/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://murpcn.com/murpwebservice/">
+      <s:element name="loginverifystudent_B_bak">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loginpass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logininfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strbak" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginverifystudent_B_bakResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginverifystudent_B_bakResult" type="tns:LoginDataNew" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LoginDataNew">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="bname" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="bid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="umcid" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="intr" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="isinformation" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ismail" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="mail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="wechat" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="loginverifystudent_B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loginpass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logininfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strbak" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginverifystudent_BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginverifystudent_BResult" type="tns:LoginDataNew" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modifyApns_iphoneid1_B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mcid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iphoneid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uip" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="uid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modifyApns_iphoneid1_BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="modifyApns_iphoneid1_BResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformationInsert_B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mphone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qq" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="informationbak1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="informationbak2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="informationbak3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="informationbak4" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isinformation" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformationInsert_BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformationInsert_BResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformationMailUpdate_B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformationMailUpdate_BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformationMailUpdate_BResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="murpverifymod_B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tgname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tgpass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tgnamenew" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tgpassnew" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mcid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="murpverifymod_BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="murpverifymod_BResult" type="tns:LoginData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LoginData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="bname" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="bid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="umcid" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="intr" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddOpinion_B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mcid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="opinioncontent" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOpinion_BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddOpinion_BResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformationPhoneUpdate_B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldmphone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newmphone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformationPhoneUpdate_BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InformationPhoneUpdate_BResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginverifyteacherfd_B_bak">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loginpass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logininfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strbak" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginverifyteacherfd_B_bakResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginverifyteacherfd_B_bakResult" type="tns:LoginDataNew" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginverifyteacherfd_B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loginpass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logininfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strbak" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginverifyteacherfd_BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginverifyteacherfd_BResult" type="tns:LoginDataNew" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ververify_B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tec" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ver" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="mcid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ververify_BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ververify_BResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insertFunctionrecords_B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mcid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ver" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertFunctionrecords_BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertFunctionrecords_BResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDeptPhoneByPage_S">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mcid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="page" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDeptPhoneByPage_SResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDeptPhoneByPage_SResult" type="tns:ArrayOfGroupName" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfGroupName">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GroupName" nillable="true" type="tns:GroupName" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GroupName">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="bname" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="bid" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="intr" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="saveFileOfPic">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="binData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mcid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="saveFileOfPicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="saveFileOfPicResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="loginverifystudent_B_bakSoapIn">
+    <wsdl:part name="parameters" element="tns:loginverifystudent_B_bak" />
+  </wsdl:message>
+  <wsdl:message name="loginverifystudent_B_bakSoapOut">
+    <wsdl:part name="parameters" element="tns:loginverifystudent_B_bakResponse" />
+  </wsdl:message>
+  <wsdl:message name="loginverifystudent_BSoapIn">
+    <wsdl:part name="parameters" element="tns:loginverifystudent_B" />
+  </wsdl:message>
+  <wsdl:message name="loginverifystudent_BSoapOut">
+    <wsdl:part name="parameters" element="tns:loginverifystudent_BResponse" />
+  </wsdl:message>
+  <wsdl:message name="modifyApns_iphoneid1_BSoapIn">
+    <wsdl:part name="parameters" element="tns:modifyApns_iphoneid1_B" />
+  </wsdl:message>
+  <wsdl:message name="modifyApns_iphoneid1_BSoapOut">
+    <wsdl:part name="parameters" element="tns:modifyApns_iphoneid1_BResponse" />
+  </wsdl:message>
+  <wsdl:message name="InformationInsert_BSoapIn">
+    <wsdl:part name="parameters" element="tns:InformationInsert_B" />
+  </wsdl:message>
+  <wsdl:message name="InformationInsert_BSoapOut">
+    <wsdl:part name="parameters" element="tns:InformationInsert_BResponse" />
+  </wsdl:message>
+  <wsdl:message name="InformationMailUpdate_BSoapIn">
+    <wsdl:part name="parameters" element="tns:InformationMailUpdate_B" />
+  </wsdl:message>
+  <wsdl:message name="InformationMailUpdate_BSoapOut">
+    <wsdl:part name="parameters" element="tns:InformationMailUpdate_BResponse" />
+  </wsdl:message>
+  <wsdl:message name="murpverifymod_BSoapIn">
+    <wsdl:part name="parameters" element="tns:murpverifymod_B" />
+  </wsdl:message>
+  <wsdl:message name="murpverifymod_BSoapOut">
+    <wsdl:part name="parameters" element="tns:murpverifymod_BResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOpinion_BSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOpinion_B" />
+  </wsdl:message>
+  <wsdl:message name="AddOpinion_BSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOpinion_BResponse" />
+  </wsdl:message>
+  <wsdl:message name="InformationPhoneUpdate_BSoapIn">
+    <wsdl:part name="parameters" element="tns:InformationPhoneUpdate_B" />
+  </wsdl:message>
+  <wsdl:message name="InformationPhoneUpdate_BSoapOut">
+    <wsdl:part name="parameters" element="tns:InformationPhoneUpdate_BResponse" />
+  </wsdl:message>
+  <wsdl:message name="loginverifyteacherfd_B_bakSoapIn">
+    <wsdl:part name="parameters" element="tns:loginverifyteacherfd_B_bak" />
+  </wsdl:message>
+  <wsdl:message name="loginverifyteacherfd_B_bakSoapOut">
+    <wsdl:part name="parameters" element="tns:loginverifyteacherfd_B_bakResponse" />
+  </wsdl:message>
+  <wsdl:message name="loginverifyteacherfd_BSoapIn">
+    <wsdl:part name="parameters" element="tns:loginverifyteacherfd_B" />
+  </wsdl:message>
+  <wsdl:message name="loginverifyteacherfd_BSoapOut">
+    <wsdl:part name="parameters" element="tns:loginverifyteacherfd_BResponse" />
+  </wsdl:message>
+  <wsdl:message name="ververify_BSoapIn">
+    <wsdl:part name="parameters" element="tns:ververify_B" />
+  </wsdl:message>
+  <wsdl:message name="ververify_BSoapOut">
+    <wsdl:part name="parameters" element="tns:ververify_BResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertFunctionrecords_BSoapIn">
+    <wsdl:part name="parameters" element="tns:insertFunctionrecords_B" />
+  </wsdl:message>
+  <wsdl:message name="insertFunctionrecords_BSoapOut">
+    <wsdl:part name="parameters" element="tns:insertFunctionrecords_BResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDeptPhoneByPage_SSoapIn">
+    <wsdl:part name="parameters" element="tns:getDeptPhoneByPage_S" />
+  </wsdl:message>
+  <wsdl:message name="getDeptPhoneByPage_SSoapOut">
+    <wsdl:part name="parameters" element="tns:getDeptPhoneByPage_SResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveFileOfPicSoapIn">
+    <wsdl:part name="parameters" element="tns:saveFileOfPic" />
+  </wsdl:message>
+  <wsdl:message name="saveFileOfPicSoapOut">
+    <wsdl:part name="parameters" element="tns:saveFileOfPicResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MURPMainServiceSoap">
+    <wsdl:operation name="loginverifystudent_B_bak">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MURP登陆验证学生</wsdl:documentation>
+      <wsdl:input message="tns:loginverifystudent_B_bakSoapIn" />
+      <wsdl:output message="tns:loginverifystudent_B_bakSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginverifystudent_B">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MURP登陆验证学生</wsdl:documentation>
+      <wsdl:input message="tns:loginverifystudent_BSoapIn" />
+      <wsdl:output message="tns:loginverifystudent_BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="modifyApns_iphoneid1_B">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">修改apns_iphoneid</wsdl:documentation>
+      <wsdl:input message="tns:modifyApns_iphoneid1_BSoapIn" />
+      <wsdl:output message="tns:modifyApns_iphoneid1_BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InformationInsert_B">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MURP个人信息</wsdl:documentation>
+      <wsdl:input message="tns:InformationInsert_BSoapIn" />
+      <wsdl:output message="tns:InformationInsert_BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InformationMailUpdate_B">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MURP修改个人信息邮箱</wsdl:documentation>
+      <wsdl:input message="tns:InformationMailUpdate_BSoapIn" />
+      <wsdl:output message="tns:InformationMailUpdate_BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="murpverifymod_B">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MURP修改用户名密码新版本,旧版本废止</wsdl:documentation>
+      <wsdl:input message="tns:murpverifymod_BSoapIn" />
+      <wsdl:output message="tns:murpverifymod_BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOpinion_B">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">意见反馈添加</wsdl:documentation>
+      <wsdl:input message="tns:AddOpinion_BSoapIn" />
+      <wsdl:output message="tns:AddOpinion_BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InformationPhoneUpdate_B">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MURP修改个人信息手机号</wsdl:documentation>
+      <wsdl:input message="tns:InformationPhoneUpdate_BSoapIn" />
+      <wsdl:output message="tns:InformationPhoneUpdate_BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginverifyteacherfd_B_bak">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MURP登陆验证教师</wsdl:documentation>
+      <wsdl:input message="tns:loginverifyteacherfd_B_bakSoapIn" />
+      <wsdl:output message="tns:loginverifyteacherfd_B_bakSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginverifyteacherfd_B">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MURP登陆验证教师、辅导员版</wsdl:documentation>
+      <wsdl:input message="tns:loginverifyteacherfd_BSoapIn" />
+      <wsdl:output message="tns:loginverifyteacherfd_BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ververify_B">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MURP最新版本地址</wsdl:documentation>
+      <wsdl:input message="tns:ververify_BSoapIn" />
+      <wsdl:output message="tns:ververify_BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertFunctionrecords_B">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">手机端功能操作记录表数据插入</wsdl:documentation>
+      <wsdl:input message="tns:insertFunctionrecords_BSoapIn" />
+      <wsdl:output message="tns:insertFunctionrecords_BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDeptPhoneByPage_S">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MURP获得部门联系方式----有分页，每页20条</wsdl:documentation>
+      <wsdl:input message="tns:getDeptPhoneByPage_SSoapIn" />
+      <wsdl:output message="tns:getDeptPhoneByPage_SSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="saveFileOfPic">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传并保存图片文件</wsdl:documentation>
+      <wsdl:input message="tns:saveFileOfPicSoapIn" />
+      <wsdl:output message="tns:saveFileOfPicSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MURPMainServiceSoap" type="tns:MURPMainServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="loginverifystudent_B_bak">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/loginverifystudent_B_bak" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginverifystudent_B">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/loginverifystudent_B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyApns_iphoneid1_B">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/modifyApns_iphoneid1_B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformationInsert_B">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/InformationInsert_B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformationMailUpdate_B">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/InformationMailUpdate_B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="murpverifymod_B">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/murpverifymod_B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOpinion_B">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/AddOpinion_B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformationPhoneUpdate_B">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/InformationPhoneUpdate_B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginverifyteacherfd_B_bak">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/loginverifyteacherfd_B_bak" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginverifyteacherfd_B">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/loginverifyteacherfd_B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ververify_B">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/ververify_B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertFunctionrecords_B">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/insertFunctionrecords_B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDeptPhoneByPage_S">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/getDeptPhoneByPage_S" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveFileOfPic">
+      <soap:operation soapAction="http://murpcn.com/murpwebservice/saveFileOfPic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MURPMainServiceSoap12" type="tns:MURPMainServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="loginverifystudent_B_bak">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/loginverifystudent_B_bak" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginverifystudent_B">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/loginverifystudent_B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyApns_iphoneid1_B">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/modifyApns_iphoneid1_B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformationInsert_B">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/InformationInsert_B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformationMailUpdate_B">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/InformationMailUpdate_B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="murpverifymod_B">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/murpverifymod_B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOpinion_B">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/AddOpinion_B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformationPhoneUpdate_B">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/InformationPhoneUpdate_B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginverifyteacherfd_B_bak">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/loginverifyteacherfd_B_bak" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginverifyteacherfd_B">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/loginverifyteacherfd_B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ververify_B">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/ververify_B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertFunctionrecords_B">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/insertFunctionrecords_B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDeptPhoneByPage_S">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/getDeptPhoneByPage_S" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveFileOfPic">
+      <soap12:operation soapAction="http://murpcn.com/murpwebservice/saveFileOfPic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MURPMainService">
+    <wsdl:port name="MURPMainServiceSoap" binding="tns:MURPMainServiceSoap">
+      <soap:address location="http://219.245.18.61:81/MURPWebService/MURPMainService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MURPMainServiceSoap12" binding="tns:MURPMainServiceSoap12">
+      <soap12:address location="http://219.245.18.61:81/MURPWebService/MURPMainService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
